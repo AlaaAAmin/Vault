@@ -17,6 +17,7 @@ For example: `cluster-addr = https://0.0.0.0:8201` and `api_addr = https://0.0.0
   
 **Configuration sample** 
 ![Vault configuration example](vault-config.png)  
+  
 9. Now try running Vault using `systemctl start vault` which might produce an error. If vault is not running you can use `vault operator diagnose -config /path/to/configfile`
 > **NOTES**
 > to create SSL certificate you can use `openssl req -new -newkey rsa:4096 -x509 -keyout vault.key -sha256 -days 365 -nodes -out vault.crt`
